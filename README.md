@@ -1,31 +1,26 @@
-<<<<<<< HEAD
-# todolist-app
-=======
 # TodolistApp
+This to-do list app is developed using HTML, CSS, TypeScript, and Angular to provide a simple and efficient task management experience. You can easily write down tasks and assign due dates. Once a task is completed, you have the option to delete it. While the app currently focuses on core functionality, future updates will introduce features such as categorization, sorting, and editing of tasks, enhancing its usability and flexibility.
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.1.6.
+## Features
+- Simple and intuitive task management
+- Assign due dates to tasks
+- Delete tasks when completed
+- Upcoming features: categorize tasks, sort tasks by date or category, edit tasks as needed
+  
+## How to start
+1. Install npm package
+   ```
+   npm install
+   ```
+2. Install Angular CLI
+   ```
+   npm i @angular/cli@16.1.6 --location=global
+   ```
+3. Run server
+   ```
+   ng serve
+   ```
+4. Navigate to `http://localhost:4200/`
 
-## Development server
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
 
-## Code scaffolding
-
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
->>>>>>> temp-branch
