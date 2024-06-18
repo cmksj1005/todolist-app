@@ -1,0 +1,31 @@
+<div class="container mt-5">
+  <h2 class="text-center mt-5" *ngIf="todolists.length > 0">Your Tasks</h2>
+  <ul class="list-group mt-3 tastList">
+    <li class="list-group-item d-flex justify-content-between align-items-center" *ngFor="let todolist of todolists; index as i">
+      <span>
+        <strong>{{todolist.title}}</strong>
+        <small class="text-muted d-block">{{todolist.date | date:'yyyy.MM.dd'}}</small>
+      </span>
+      <button class="btn btn-outline-primary btn-sm" (click)="deleteTodolist(i)">Done</button>
+    </li>
+  </ul>
+
+  <div class="card shadow-sm">
+    <div class="card-header text-center bg-primary text-white">
+      <h2>Add New Task</h2>
+    </div>
+    <div class="card-body">
+      <div class="row mb-3">
+        <div class="col-md-6 mb-3 mb-md-0">
+          <input class="form-control" [(ngModel)]="newTodolistTitle" placeholder="Enter new task">
+        </div>
+        <div class="col-md-4 mb-3 mb-md-0">
+          <input class="form-control" [(ngModel)]="newTodolistDate" type="date" placeholder="yyyy.mm.dd">
+        </div>
+        <div class="col-md-2">
+          <button class="btn btn-outline-success w-100" (click)="addTodolist()">Add</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
